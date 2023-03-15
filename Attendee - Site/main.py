@@ -13,7 +13,6 @@ def fetchDetails(tableName:str,loginId:str,password:str):
     return details
     
 mydb = methods.connectWithServer(params=params)   
-
 mycursor = mydb.cursor()
 app = Flask(__name__)
 @app.route('/',methods=['GET','POST'])
